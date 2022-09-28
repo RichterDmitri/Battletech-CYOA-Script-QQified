@@ -17,7 +17,7 @@ def splt_print(msgstart, message):
 
 
 
-Gender = ['Female', 'Male','Player Choice','Masculine True Hermaphrodite','Feminine True Hermaphrodite','Androgynous True Hermaphrodite']
+Gender = ['Female', 'Male','Player Choice','Masculine True Hermaphrodite','Feminine True Hermaphrodite','Androgynous True Hermaphrodite', ]
 Location = [['Lyran Commonwealth', 'Tharkad', 'Tharkad City'],
             ['Free Worlds League', 'Atreus', 'Atreus City'],
             ['Capellan Confederation', 'Sian', 'Forbidden City'],
@@ -130,7 +130,7 @@ while (roll_again == "yes" or roll_again == "y"):
     if (i[15] == 6): i+= [random.randint(1,6) for _ in range(2)]
     
     splt_print('Name\t\t\t\t\t:', '?')
-    splt_print('Gender\t\t\t\t\t:', Gender[i[0]%2])
+    splt_print('Gender\t\t\t\t\t:', Gender[i[0]%7])
     splt_print('Age\t\t\t\t\t\t:','20')
     splt_print('Location & Citizenship\t:', Location[i[1]-1][2] + ', ' + Location[i[1]-1][1] + ', ' + Location[i[1]-1][0])
     money = (i[13]+i[14]+48-i[5]-i[8]-i[10]-i[11]-i[12])*4
